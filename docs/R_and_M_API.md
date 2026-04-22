@@ -98,7 +98,6 @@ GET https://rickandmortyapi.com/api/character/2
     "https://rickandmortyapi.com/api/episode/2",
     "https://rickandmortyapi.com/api/episode/3",
     "https://rickandmortyapi.com/api/episode/4"
-    // и так далее
   ],
   "url": "https://rickandmortyapi.com/api/character/2",
   "created": "2017-11-04T18:50:21.651Z"

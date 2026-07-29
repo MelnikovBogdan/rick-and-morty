@@ -1,4 +1,6 @@
-export const mockCharacters = [
+import type { Character } from '@shared/types/character.ts'
+
+export const mockCharacters: Character[] = [
   {
     id: 1,
     name: 'Rick Sanchez',

@@ -19,7 +19,16 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["src/pages/*"],
+      "@widgets/*": ["src/widgets/*"],
+      "@app/*": ["src/app/*"],
+      "@shared/*": ["src/shared/*"],
+      "@features/*": ["src/features/*"]
+    }
   },
   "include": ["src"]
 }

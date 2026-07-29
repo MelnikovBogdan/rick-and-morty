@@ -1,1 +1,1 @@
-export { CharactersPage } from './ui/CharactersPage.tsx'
+export { CharacterPage as default } from './ui/CharacterPage.tsx'

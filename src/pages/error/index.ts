@@ -1,1 +1,1 @@
-export { NotFoundPage as default } from './ui/NotFoundPage.tsx'
+export { ErrorPage as default } from './ui/ErrorPage.tsx'

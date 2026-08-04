@@ -1,0 +1,73 @@
+.character-list-card {
+  display: flex;
+  padding: 7px;
+  gap: 13px;
+  width: 504px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.character-list-card__image {
+  width: 240px;
+  height: 240px;
+}
+
+.character-list-card__data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.character-list-card__name {
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.character-list-card__data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.character-list-card__data dt {
+  line-height: 21px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  height: 17px;
+}
+
+.character-list-card__data dd {
+  position: relative;
+  width: fit-content;
+  line-height: 21px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.6);
+  height: 17px;
+}
+
+.character-list-card__data-status::after {
+  content: '';
+  position: absolute;
+  bottom: 1px;
+  right: -15px;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 50%;
+}
+
+.character-list-card__data-status_alive::after {
+  background: #12b800;
+}
+
+.character-list-card__data-status_dead::after {
+  background: #df0000;
+}
+
+.character-list-card__data-status_unknown::after {
+  background: #f90;
+}

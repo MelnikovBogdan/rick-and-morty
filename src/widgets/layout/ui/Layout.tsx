@@ -1,8 +1,9 @@
 import { Outlet } from 'react-router-dom'
 import './Layout.css'
 import RickAndMortyIcon from '@shared/assets/icons/RickAndMorty.svg'
+import type { PropsWithChildren } from 'react'
 
-export function Layout() {
+export function Layout({ children }: PropsWithChildren) {
   return (
     <div className="layout">
       <header className="layout__header">
@@ -11,9 +12,7 @@ export function Layout() {
         </div>
       </header>
 
-      <main className="layout__content">
-        <Outlet />
-      </main>
+      <main className="layout__content">{children ?? <Outlet />}</main>
 
       <footer className="layout__footer">
         <span className="layout__footer-text">Made with love by frontovichok_MelnikovBogdan</span>

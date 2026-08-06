@@ -1,0 +1,95 @@
+.select {}
+
+.select__target {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 1px solid #393939;
+  color: rgba(0, 0, 0, 0.60);
+  background-color: transparent;
+  border-radius: 6px;
+  gap: 10px;
+}
+
+.select__target_sm {
+  padding: 2px 5px;
+}
+
+.select__target_lg {
+  padding: 18px 14px;
+}
+
+.select__target-icon {
+  transition: 2ms ease-in-out;
+}
+
+.select__target-icon_sm {
+  width: 9px;
+  height: 9px;
+}
+
+.select__target-icon_lg {
+  width: 12px;
+  height: 12px;
+}
+
+.select__target-icon {
+  transition: 150ms all ease-in-out;
+}
+
+.select__target-icon_collapsed {
+  transform: rotateX(0deg);
+}
+
+.select__target-icon_expanded {
+  transform: rotate(180deg);
+}
+
+.select__popup {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: absolute;
+  top: anchor(bottom);
+  left: anchor(left);
+
+  margin-top: 8px;
+  background: white;
+  border: 1px solid #393939;
+  border-radius: 6px;
+
+  max-height: 200px;
+  width: anchor-size(width);
+  overflow-y: auto;
+}
+
+.select__option {
+  display: flex;
+  overflow: hidden;
+}
+
+.select__option-text {
+  color: rgba(0, 0, 0, 0.60);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+}
+
+.select__popup_sm {
+  padding-inline: 5px;
+  gap: 5px;
+}
+
+.select__popup_lg {
+  padding-inline: 14px;
+}
+
+.select__popup_sm .select__option {
+  padding: 0px;
+}
+
+.select__popup_lg .select__option {
+  padding: 10px 0px;
+}

@@ -1,5 +1,6 @@
-import './ErrorPage.css'
 import { Layout } from '@widgets/layout'
+
+import './ErrorPage.css'
 
 export function ErrorPage() {
   return (

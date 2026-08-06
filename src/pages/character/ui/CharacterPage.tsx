@@ -1,10 +1,13 @@
-import './CharacterPage.css'
-import { mockCharacters } from '@features/character'
-import { useNavigate, useParams } from 'react-router-dom'
-import { ImageWithFallback } from '@shared/ui'
-import ArrowBackIcon from '@shared/assets/icons/ArrowBackIcon.svg'
 import { useEffect, useState } from 'react'
+
+import { useNavigate, useParams } from 'react-router-dom'
+
+import { mockCharacters } from '@features/character'
+import ArrowBackIcon from '@shared/assets/icons/ArrowBackIcon.svg'
 import type { Character } from '@shared/types/character.ts'
+import { ImageWithFallback } from '@shared/ui'
+
+import './CharacterPage.css'
 
 export function CharacterPage() {
   const navigate = useNavigate()

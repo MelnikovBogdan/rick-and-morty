@@ -48,6 +48,8 @@
 }
 
 .select__popup {
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   position: absolute;
   top: anchor(bottom);
@@ -60,14 +62,12 @@
 
   max-height: 200px;
   width: anchor-size(width);
-  padding-inline: 14px;
   overflow-y: auto;
 }
 
 .select__option {
   display: flex;
-  padding: 10px 0px;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .select__option-text {
@@ -75,4 +75,21 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
+}
+
+.select__popup_sm {
+  padding-inline: 5px;
+  gap: 5px;
+}
+
+.select__popup_lg {
+  padding-inline: 14px;
+}
+
+.select__popup_sm .select__option {
+  padding: 0px;
+}
+
+.select__popup_lg .select__option {
+  padding: 10px 0px;
 }

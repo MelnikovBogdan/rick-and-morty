@@ -1,7 +1,10 @@
 import { Outlet } from 'react-router-dom'
-import './Layout.css'
-import RickAndMortyIcon from '@shared/assets/icons/RickAndMorty.svg'
+
 import type { PropsWithChildren } from 'react'
+
+import RickAndMortyIcon from '@shared/assets/icons/RickAndMorty.svg'
+
+import './Layout.css'
 
 export function Layout({ children }: PropsWithChildren) {
   return (

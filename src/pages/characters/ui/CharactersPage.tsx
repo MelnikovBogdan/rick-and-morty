@@ -1,6 +1,7 @@
-import './CharactersPage.css'
+import { CharacterListCard, mockCharacters } from '@features/character'
 import RickAndMortyWelcome from '@shared/assets/images/RickAndMortyWelcome.png'
-import { mockCharacters, CharacterListCard } from '@features/character'
+
+import './CharactersPage.css'
 
 export function CharactersPage() {
   return (

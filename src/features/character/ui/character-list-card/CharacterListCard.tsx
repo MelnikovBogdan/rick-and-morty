@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom'
+
 import type { Character } from '@shared/types/character.ts'
 import { ImageWithFallback } from '@shared/ui'
+
 import './CharacterListCard.css'
-import { useNavigate } from 'react-router-dom'
 
 interface Props {
   character: Character

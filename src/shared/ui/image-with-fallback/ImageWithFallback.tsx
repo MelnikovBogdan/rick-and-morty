@@ -1,7 +1,10 @@
-import CharacterPlaceholderImage from '@shared/assets/images/CharacterPlaceholder.jpg?url'
 import { useEffect, useState } from 'react'
-import './ImageWithFallback.css'
+
 import classNames from 'classnames'
+
+import CharacterPlaceholderImage from '@shared/assets/images/CharacterPlaceholder.jpg?url'
+
+import './ImageWithFallback.css'
 
 interface Props extends React.ImgHTMLAttributes<HTMLImageElement> {
   ms?: number

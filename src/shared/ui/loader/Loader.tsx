@@ -1,5 +1,7 @@
-import PortalImage from '@shared/assets/images/PortalImage.png?url'
 import classNames from 'classnames'
+
+import PortalImage from '@shared/assets/images/PortalImage.png?url'
+
 import './Loader.css'
 
 interface Props extends React.HTMLAttributes<HTMLDivElement> {
